@@ -1,0 +1,383 @@
+body{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+      
+}
+
+
+#background-tree {
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width:100%; 
+    height:100%;
+    z-index: -200;
+    /* Ensures the image stays behind other content */
+}
+
+#white-background {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height:100%;
+    z-index: -100;
+     /* Ensures the image stays behind other content */
+}
+
+
+#black{
+    position:fixed;
+    z-index: -100;
+    opacity: 0.3;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px; /* Adjust as needed for spacing */
+    z-index: 100; /* Ensures the navigation bar stays above the background */
+}
+
+#navigation-left{
+    color: white;
+}
+
+#navigation-right .text {
+    padding: 10px;
+    display: inline-block;
+    color: white; /* Ensures consistent spacing */
+}
+
+#navigation-right .text:hover{
+    text-decoration: underline;
+    color: #007786;
+}
+
+#My-profile-img{
+    margin-top:300px;
+    margin-bottom: 300px;
+    position: relative;
+    z-index: 1;
+
+    
+}    
+#my-picture{
+    width: 200px; 
+    height: 200px; 
+    border-radius: 100%;
+    border: solid white;
+    z-index: 1;
+    
+} 
+
+#about-me{
+    text-align: center;
+    color: white;
+}
+
+.about { 
+    display: inline-block; 
+    width: 300px; /* Adjust width as needed */ height: 40px; /* Adjust height as needed */ overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.fa-bars{
+    display:none;
+}
+
+.small-text{
+    text-align:center;
+    padding: 20px;
+}
+
+#small-nav{
+    height: fit-content;
+    width:fit-content;
+    display: flex;
+    position:absolute;
+    top: 0;
+    left: -60%;
+    background-color:#909090;
+    padding:20px;
+    border-radius: 5px;
+    transition: ease 1s;
+    z-index: 10;
+
+}
+
+#small-navigation-right{
+    color:white;
+}
+
+#cancel{
+    text-align: right;
+}
+
+.small-text:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:650px){
+    #navigation-right{
+        display:none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    
+}
+
+#About-me-skills{
+    text-align: center;
+    padding:20px;
+    padding-top: 100px;
+    background-color: white;
+    z-index: 100;
+    color: black;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.skill-progress{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill{
+    padding:5px;
+    text-align: left;
+    font-weight:bold;
+    margin: 5px;
+
+}
+
+.progress-bar{
+    width: 100%;
+    overflow: hidden;
+    background-color: #909090;
+    
+}
+
+.progress{
+    width: 0;
+    height: 5px;
+    position: relative;
+    background:linear-gradient(to right, #0054b4, #40e0d0);
+    transition: width 1s ease-in-out;
+}
+
+.progress-value { position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    font-size: 5px; 
+}
+
+.skill-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:900px){
+    .skill-progress{
+        grid-template-columns: 1fr;
+    }
+}
+
+#Myservices {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: grid;
+    margin-top: 100px;
+}
+
+#Making-service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services {
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    color: white;
+    margin: 10px;
+    border: solid white 1px;
+    /* Transition for icon color */
+    transition: background 0.5s ease-in-out, color 0.3s ease-in-out; /* Transition for background and color */
+}
+
+.services .fa-code,
+.services .fa-hackerrank {
+    transition: color 0.3s ease; /* Transition for icon color */
+  
+}
+.services:hover {
+    color: white;
+    background: linear-gradient(to top, #0054b4, #40e0d0 ); /* Background image on hover */
+}
+
+.services:hover .fa-code,
+.services:hover .fa-hackerrank {
+    color: white; /* Change icon color to white on hover */
+}
+
+@media (max-width:700px){
+    #Making-service-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+#Portfolio{
+    background-color: white;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.portfolio-web-one{
+    display: grid;
+
+}
+
+.portfolio-web-one img{
+    width: 300px;
+    height: 250px;
+}
+
+.portfolio-web-two img{
+    width: 300px;
+    height: 250px;
+}
+
+#Education{
+
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#education-life{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#school{
+    backdrop-filter: blur(20px);
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px white;
+}
+
+#college{
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px white;
+    backdrop-filter: blur(20px);
+}
+
+@media (max-width:700px){
+    #education-life{
+        grid-template-columns: 1fr;
+    }
+}
+
+#Contact-me{
+    background-color: white;
+    padding-top: 100px;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+
+form{
+    margin: 20px;
+    margin-left: 10px;
+}
+
+form input{
+    padding: 10px;
+    border:solid 1px #909090;
+    border-radius: 5px;
+    width: 90%;
+    margin: 8px;
+}
+
+form textarea{
+    padding: 10px;
+    border:solid 1px #909090;
+    border-radius: 5px;
+    width: 90%;
+    margin: 8px;
+}
+
+form button{
+    padding: 10px;
+    margin: 8px;
+    background-color: #007786;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+form button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#My-information{
+    margin: 20px;
+    
+}
+
+#My-information h4{
+    background-color: #F5F5F5; 
+    padding: 5px; 
+    margin: 15px; 
+    border-radius: 5px; 
+    width: 40%;
+}
+
+
+footer{
+    margin: 0;
+    background-color: #121212;
+    padding: 30px;
+    text-align: center;
+}
+
+#social-footer{
+    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+#social-footer i {
+    padding: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: 0.5; /* Initial opacity */
+    transition: opacity 0.5s ease, color 0.5s ease; /* Transition for both opacity and color */
+}
+
+#social-footer i:hover {
+    color: #007786; /* Hover color */
+    opacity: 1; /* Fade to full opacity */
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premnath's Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+    <img id="black" src="Black_colour.jpg" alt="black">
+    <img id="background-tree" src="background 1 trees.jpg" alt="">
+
+    <nav data-aos="fade-up">
+        <div class="navigation">
+            <div id="navigation-left">
+                <h2>Premnath</h2>
+            </div>
+            <div id="navigation-right">
+                <p class="text" id="home">Home</p>
+                <p class="text" id="about-nav">About</p>
+                <p class="text" id="Portfolio-nav">Portfolio</p>
+                <p class="text" id="contact">Contact</p>
+                
+               
+            </div> 
+
+            <i class="fa-solid fa-bars" onclick="slideNav()"></i>
+        </div>
+
+        <div id="small-nav">
+            <div id="small-navigation-right">
+                <p id="cancel" onclick="cancelslideNav()"><i class="fa-solid fa-xmark"></i></p>
+                <p class="small-text" id="home-side">Home</p>
+                <p class="small-text" id="about-nav-side">About</p>
+                <p class="small-text" id="Portfolio-nav-side">Portfolio</p>
+                <p class="small-text" id="contact-side">Contact</p>
+                
+            </div> 
+
+
+        </div>
+    </nav>
+    
+    <section id="My-profile-img" data-aos="fade-up" data-aos-duration="1500">
+        <center>
+            <img id="my-picture" src="profile-icon-design-free-vector.jpg" alt="Premnath">
+        </center>    
+        <div id="about-me">
+            <h1 style="font-size: 40px;">Hi !, I am Premnath </h1>
+            <p style="font-size: 25px;"><span class="about"></span></p>    
+        </div>
+
+  
+    </section>
+    
+    <section id="About-me-skills" >
+        <p style="color: #007786;" data-aos="fade-right" >About me</p>
+        <h1 style="font-size: 35px;" data-aos="fade-right" >Welcome To My Site</h1>
+        <p style="color: #888888; padding-top: 20px;" data-aos="fade-right" >I am a Computer Science and Engineering student at Chennai Institute of Technology with a strong foundation in technology and a passion for innovation. I am highly motivated and possess a positive attitude that enables me to thrive in both individual and team environments. My ability to work collaboratively ensures effective communication and problem-solving within a team. My areas of interest include web development, app development, and artificial intelligence, where I am eager to explore advanced concepts and enhance my technical skills. I am committed to continuous learning and seek opportunities to develop innovative solutions that contribute meaningfully to the field of technology.</p>
+        <div class="skill-progress">
+            <div class="skill">
+                <div class="skill-text">
+                    <h4>HTML</h4>
+                    <h4>90%</h4>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="90">                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-text">
+                    <h4>CSS</h4>
+                    <h4>60%</h4>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress" data-progress="60">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-text">
+                    <h4>Javascript</h4>
+                    <h4>50%</h4>
+                </div>
+                                
+                <div class="progress-bar">
+                    <div class="progress" data-progress="50"> </div>
+                </div>
+            </div>                        
+        </div>
+    </section>
+    <section id="Myservices">
+        <h4 style="color: #007786;" data-aos="fade-right">My Services</h4>
+        <h1 style="color: white; font-size: 40px; margin: 50px;" data-aos="fade-right" >I'm available for help</h1>
+        <div id="Making-service-grid">
+            <div class="services" id="services-code">
+                <h4  id="coder"><i class="fa-solid fa-code" style="color: #007786;"></i></h4>
+                <h4>I am available to assist in website development. Whether you need support with designing, structuring, or setting up a website, I can help navigate the process. While I may not be an expert, I am capable of contributing effectively to building a functional and user-friendly site. If you require assistance, feel free to reach out.</h4>
+            </div>
+            <div class="services" id="services-hack">
+               <h4><i class="fa-brands fa-hackerrank" style="color: #007786;"></i></h4>
+                <h4>I am eager to participate in a hackathon and collaborate with like-minded individuals. If you are interested in joining forces, feel free to connect with me—we can work together towards innovative solutions.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="Portfolio">
+        <h4 style="color: #007786;" data-aos="fade-right">Portfolio</h4>
+        <h1 style="font-size: 40px; margin: 50px;" data-aos="fade-right">I Love What I Do</h1>
+        <p style="color: #888888;" data-aos="fade-right">Websites</p>
+        <div class="portfolio-web-one">
+            <center>
+                <img src="web-portfolio-1.jpg" alt="website one" id="web-portfolio-1" style="height: 260px; width: 310px;">
+                <img src="web-portfolio-2.jpg" alt="website two" id="web-portfolio-2">
+            </center>
+
+        </div>
+
+        <div class="portfolio-web-two">
+            <center>
+                <img src="web-portfolio-3.jpg" alt="website three" id="web-portfolio-3">
+                <img src="web-portfolio-4.jpg" alt="website four" id="web-portfolio-4"> 
+            </center>
+        </div>
+    </section>
+    <section id="Education">
+        <center>
+            <h4 style="color: #007786;" data-aos="fade-right">My carrer</h4>
+            <h1 style="font-size: 40px; color: white;" data-aos="fade-right">Education</h1>
+        </center>
+        <div id="education-life">
+            <div id="school">
+                <h4 style="color:white; border: solid #007786; width: fit-content; padding: 10px;">2017 - 2024</h4>
+                <h3 style="color: white;">Higher Standard,  Isha Vidhya Ramaniyam Matriculation School</h3>
+                <p style="padding-top: 20px; color: #888888;">I have completed my schooling at Isha Vidhya Ramaniyam Matriculation Hr.sec School</p>
+            </div>
+            <div id="college">
+                <h4 style="color: white; border: solid #007786; width: fit-content; padding: 10px;">2024 - now</h4>
+                <h3 style="color: white;">Computer Science And Engineering, Chennai Institute Of Technology</h3>
+                <p style="padding-top: 20px; color: #888888;">I am currently pursuing a Bachelor of Engineering (B.E.) degree in Computer Science and Engineering at Chennai Institute Of Technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact-me">
+        <center>
+            <h4 style="color: #007786;"  data-aos="fade-right">Have a Question?</h4>
+        <h1 style="color:black; font-size: 40px;"  data-aos="fade-right">Contact Me Now</h1>
+        </center>
+    <center>
+        <div id="Making-contact-grid">
+            <!-- <form action="">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your email" required>
+                <input type="tel" placeholder="Your Phone" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>  -->
+            <div id="My-information" >
+                <h4><i class="fa-solid fa-location-dot" style="color: #007786; padding: 5px;"></i> Nangavalli, Salem, Tamilnadu</h4>
+                <h4><i class="fa-solid fa-phone" style="color: #007786; padding: 5px;"></i> 9566794604</h4>
+                <h4><i class="fa-solid fa-envelope" style="color: #007786; padding: 5px;"></i>premsundarrajan4@gmail.com</h4>
+                <h4><i class="fa-solid fa-download" style="color: #007786; padding: 5px;"></i> Download Resume</h4>
+            </div>
+            
+        </div>
+    </center>
+       
+    </section>
+    <footer>
+        <div id="social-footer">
+            <a href="https://www.instagram.com/premnathsundarrajan/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="https://www.linkedin.com/in/premnath-sundarrajan-274809333/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+            <a href="mailto:premsundarrajan4@gmail.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+        </div>
+        <p style="color: white;">&copy; Copyright - Built by Premnath</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
