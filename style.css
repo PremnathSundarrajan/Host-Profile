@@ -292,6 +292,11 @@ body{
     backdrop-filter: blur(20px);
 }
 
+.education:hover {
+    color: white;
+    background: linear-gradient(to top, #0054b4, #40e0d0 ); /* Background image on hover */
+}
+
 @media (max-width:700px){
     #education-life{
         grid-template-columns: 1fr;
